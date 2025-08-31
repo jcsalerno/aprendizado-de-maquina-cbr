@@ -17,7 +17,7 @@ A biblioteca Python `cbrkit` foi utilizada como base estrutural, mas a lógica d
 ├── data/
 │   └── Training.csv     
 |   └── kaggle-base.csv 
-└── src/
+└── scritps/
     ├── cbr_sintomas_doenca.py  # Script de demonstração do conceito CBR.
     ├── teste_loo.py            # Script de teste inicial (usado com a base pequena).
     ├── teste_loo_melhorado.py  # Script de avaliação final com TF-IDF.
@@ -102,8 +102,3 @@ Nova Acurácia do Sistema: 100.00%
 ```
 
 
-# cbr-aprendizado-de-maquina
-# aprendizado-de-maquina-cbr
-# aprendizado-de-maquina-cbr
-# aprendizado-de-maquina-cbr
-# aprendizado-de-maquina-cbr
