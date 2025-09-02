@@ -8,7 +8,7 @@ O trabalho implementa um sistema de **Raciocínio Baseado em Casos (CBR)**, uma 
 
 O desenvolvimento deste projeto foi uma jornada em duas fases que destaca um princípio fundamental da ciência de dados: **a qualidade e a escala dos dados são os fatores mais críticos para o sucesso de um modelo de aprendizado.** Partimos de um protótipo com baixa performance (2.38% de acurácia) para uma solução final otimizada que alcançou **100% de acurácia** no dataset de teste.
 
-A biblioteca Python `cbrkit` foi utilizada como base estrutural, mas a lógica de similaridade, o núcleo do sistema, foi implementada de forma customizada para garantir robustez e permitir otimizações avançadas como a ponderação de sintomas com TF-IDF.
+A biblioteca Python `cbrkit` foi utilizada como base estrutural.
 
 ## Estrutura do Repositório
 
@@ -37,7 +37,7 @@ Essa estrutura de "problema (sintomas) -> solução (diagnóstico)" é o formato
 
 ## A Arquitetura da Solução
 
-A solução final é um sistema CBR que implementa uma métrica de similaridade sofisticada para comparar casos.
+A solução final é um sistema CBR que implementa uma métrica de similaridade.
 
 1.  **Engenharia de Features com TF-IDF:** Antes de qualquer comparação, o sistema analisa todos os 4.920 casos para calcular o peso **IDF (Inverse Document Frequency)** de cada sintoma. Sintomas raros e específicos recebem um peso alto, enquanto sintomas comuns e ambíguos recebem um peso baixo. Isso cria uma camada de "inteligência" que informa ao sistema quais sintomas são mais importantes para o diagnóstico.
 
@@ -56,8 +56,8 @@ A solução final é um sistema CBR que implementa uma métrica de similaridade 
 
 Primeiro, clone o repositório e navegue até a pasta do projeto:
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+git clone https://github.com/jcsalerno/aprendizado-de-maquina-cbr.git
+cd aprendizado-de-maquina-cbr
 ```
 
 Crie e ative um ambiente virtual (altamente recomendado ):
